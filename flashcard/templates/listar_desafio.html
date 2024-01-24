@@ -65,7 +65,14 @@
                             <th><a href="{% url 'desafio' desafio.id %}">{{desafio.id}}</a></th>
                             <td>{{desafio.titulo}}</td>
                             <td>{{desafio.get_dificuldade_display}}</td>
-                            <td>{{desafio.status}}</td> <!--lição de casa, checar views-->
+                            
+                                {% if desafio.status %}
+                                    <td>Concluído</td>
+                                {% else %}
+                                    <td>Pendente</td>
+                                {% endif %}
+
+                            <!--lição de casa, checar views-->
                         </tr>
                   {% endfor %}
                 </tbody>

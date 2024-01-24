@@ -156,9 +156,6 @@ def listar_desafio(request):
         if dificuldade_filtrar:
             desafios = desafios.filter(dificuldade=dificuldade_filtrar)
 
-
-
-
     return render(request, 'listar_desafio.html', {'desafios': desafios, 'categorias': categorias,
                                                    'dificuldades': dificuldades,})
 
@@ -170,21 +167,19 @@ def desafio(request, id):
 
     #Status do desafio
     respondidas = desafio.flashcards.filter(respondido=True).count()
+  
+    if desafio.quantidade_perguntas == respondidas:
+        desafio.status=True
 
-    if respondidas == 0:
-        desafio.status=desafio.STATUS_CHOICES[0]
-
-    elif desafio.quantidade_perguntas == respondidas:
-        desafio.status=desafio.STATUS_CHOICES[2]
-
-    else: desafio.status=desafio.STATUS_CHOICES[1]
-
+    else: desafio.status=False
+  
     #numero de acertos e erros
     if request.method == 'GET':
         acertos = desafio.flashcards.filter(respondido=True).filter(acertou=True).count()
         erros = desafio.flashcards.filter(respondido=True).filter(acertou=False).count()
         faltantes = desafio.flashcards.filter(respondido=False).count()
-        return render(request, 'desafio.html', {'desafio': desafio, 'acertos': acertos, 'erros': erros, 'faltantes': faltantes}, )
+        return render(request, 'desafio.html', {'desafio': desafio, 'acertos': acertos, 
+                                                'erros': erros, 'faltantes': faltantes}, )
 
 def responder_flashcard(request, id):
     flashcard_desafio = FlashcardDesafio.objects.get(id=id)
