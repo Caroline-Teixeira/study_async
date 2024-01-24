@@ -17,7 +17,7 @@ Desenvolvido durante a PyStack Week 9.0 - promovido pelo canal <a href="https://
 ![image](https://github.com/Caroline-Teixeira/study_async/assets/131414771/d3fcfa31-9628-40c3-99ad-13e3515857b6)
 ![image](https://github.com/Caroline-Teixeira/study_async/assets/131414771/16ca26a6-95a2-4512-9000-83fef5c290b3)
 ![image](https://github.com/Caroline-Teixeira/study_async/assets/131414771/a6d142b1-1e2b-43a3-9b76-f6cd5eb6d000)
-![image](https://github.com/Caroline-Teixeira/study_async/assets/131414771/43aace03-2223-46f4-b925-aaacd9a2cb02) 
+![image](https://github.com/Caroline-Teixeira/study_async/assets/131414771/c0de6981-4aa8-457a-8341-5bc3803461fc)
 ![image](https://github.com/Caroline-Teixeira/study_async/assets/131414771/e73cf5a7-939a-48a3-9939-08b69e2ad59d)
 
 
