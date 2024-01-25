@@ -3,7 +3,7 @@
 Desenvolvido durante a PyStack Week 9.0 - promovido pelo canal <a href="https://www.youtube.com/@pythonando">Pythonando</a> durante os dias 15 a 19 de janeiro.
 <br>
 <br>
-<a href=https://www.notion.so/Instru-es-sobre-reposit-rio-9773136c8b7d48b695844a34674e0171?pvs=4>Instruções</a>
+<a href=https://www.notion.so/Instru-es-sobre-reposit-rio-9773136c8b7d48b695844a34674e0171?pvs=4](https://hungry-work-e4f.notion.site/Instru-es-sobre-reposit-rio-9773136c8b7d48b695844a34674e0171?pvs=4>Instruções</a>
 <h4>Status: em andamento</h4><br>
 
 <h4>Linguagens:</h4>
